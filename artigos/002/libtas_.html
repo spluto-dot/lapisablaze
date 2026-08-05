@@ -1,0 +1,332 @@
+<html>
+
+<head>
+<meta charset="windows-1252">
+
+<title>LapisAblaze</title>
+<link href="../../css/default.css" rel="stylesheet" type="text/css">
+</head>
+<body topMargin=0 marginwidth="10" marginheight="0" bgcolor="#EAECEE">
+<center>
+<table border="0" cellPadding="0" width="900" style="border-collapse: collapse" id="table1" bgcolor="#FFFFFF">
+	<tr>
+		<td colspan="3">
+	<img border="0" src="../../arquivos/topo_.jpg"></td>
+	</tr>
+	<tr>
+		<td colspan="3">
+	<p align="center"><b><font size="3"><br>
+	</font><font size="4"><a href="../../index.html">INICIO</a> - ARTIGOS -
+	<a href="../../down/main.html">DOWNLOADS</a> - 
+	<a href="../../sonic/main.html">SONIC THE HEDGEHOG</a> - 
+	<a href="../../xbox/main.html">XBOX</a></font></b><hr color="#E5E7E9" width="95%"></td>
+	</tr>
+	<tr>
+		<td rowspan="2" width="40">
+	&nbsp;</td>
+		<td width="820">
+	<b><br>
+	<font style="font-size: 20pt"><a href="../main.html">Artigos</a></font><font style="font-size: 11pt"> 
+	/ libtas_ </font>
+	<font style="font-size: 20pt"> (libTAS)</font></b><hr color="#E5E7E9">
+	<p><i>Last Update: 09/11/2024<br>
+	<br>
+	libTAS &lt;- TASVideos.org</i><br>
+	<br>
+	Esse tutorial <b>NÃO</b> inclui VM, somente WSL, por ser o metodo mais facil.<br>
+	libTAS precisa de WSL2 que só está disponivel no Windows 10/11.<br>
+	<br>
+	<b><span style="font-size: 20pt">WSL2</span></b><br>
+	<br>
+	Atualize seu Windows<br>
+	<i><br>
+	<img border="0" src="arquivos/libtas/libtas_001.png" width="719" height="325"><br>
+	</i><br>
+	<i>Configurações/Atualização e Segurança/Para Desenvolvedores</i> marque a 
+	opção <i>Modo de Desenvolvedor</i>.<br>
+	<br>
+	<img border="0" src="arquivos/libtas/libtas_002.png"><br>
+	<br>
+	<i>Configurações/Aplicativos/Aplicativos e Recursos/Programas e Recursos/Ativas 
+	ou Desativas Recursos do Windows</i> e marque as opções <i>Subsistema do 
+	<b>Windows para Linux</b></i> e <b> <i>Area Restrita do Windows</i></b>.<i><br>
+	<br>
+	<img border="0" src="arquivos/libtas/libtas_003.png"><br>
+	<br>
+	</i>Restart<br>
+	<br>
+	Para confirmar que está tudo certo abra o <i>PowerShell</i> do Windows e 
+	digite <i><b>bash.exe</b></i>.<br>
+	<br>
+	<img border="0" src="arquivos/libtas/libtas_004.png"><br>
+	<br>
+	Esta tudo OK, agora falta uma distribuição, mas antes vamos ter certeza que 
+	a versão do WSL é a 2. No CMD/Prompt de Comando digite: <code>
+	<span style="background-color: #EAECEE">wsl --set-default-version 2</span></code><br>
+	<br>
+	<code><span style="background-color: #EAECEE">For information on key differences with WSL 2 please visit https://aka.ms/wsl2<br>The operation completed successfully.</span></code><br>
+	<br>
+	Agora faça o Download do Kernel Update aqui:
+	<a target="_blank" href="https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package">
+	https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package</a><br>
+	<br>
+	<i><b>Link Direto:</b></i>
+	<a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">
+	https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi</a><br>
+	<br>
+	OK! Vamos para a distribuição,
+	na propria <i>Windows Store</i> procure pela ultima versão do <i>Ubuntu</i>.<br>
+	<br>
+	<img border="0" src="arquivos/libtas/libtas_027.png"><br>
+	<br>
+	<i>24.04 LTS (18/06)</i><br>
+	<br>
+	Depois do Download, abra o Software e aguarde as configurações. Crie um 
+	USUARIO e SENHA,<i><b> lembre-se da senha</b></i>.<br>
+	<i><br>
+	<img border="0" src="arquivos/libtas/libtas_006.png" width="800" height="418"><br>
+	</i>
+	<br>
+	Para ter certeza que está tudo OK, de volta ao CMD, verifique a versão do WSL, digite: <code>
+	<span style="background-color: #EAECEE">wsl -l -v</span></code><i><br>
+	
+	<br>
+	<img border="0" src="arquivos/libtas/libtas_007.png" width="800" height="418"><br>
+	</i><br>
+	Tudo certo! Agora voce tem o Linux/Ubuntu rodando no Windows 10 WSL2, todos os arquivos que 
+	voce quiser colocar dentro do Linux, devem ser copiados para
+	<font color="#000080"><i><b>\\wsl.localhost\Ubuntu\home\&lt;USER&gt;\</b></i></font><br>
+	<br>
+	<img border="0" src="arquivos/libtas/libtas_008.png"><br>
+	<br>
+	<b><span style="font-size: 20pt">libTAS</span></b><br>
+	<br>
+	Antes de tudo, dentro do Linux é hora de procurar por Updates, digite:<br>
+	<br>
+	<code><span style="background-color: #EAECEE">sudo apt update</span></code><br>
+	<br>
+	<img border="0" src="arquivos/libtas/libtas_009.png" width="800" height="418"><br>
+	<br>
+	Em seguida:<br>
+	<br>
+	<code><span style="background-color: #EAECEE">sudo apt upgrade</span></code><br>
+	<br>
+	<img border="0" src="arquivos/libtas/libtas_010.png" width="800" height="418"><br>
+	<br>
+	Confirme quando necessário e aguarde a instalação. Agora vamos instalar o 
+	libTAS.<br>
+	<i>
+	<br>
+	Download:
+	<a target="_blank" href="https://github.com/clementgallet/libTAS/releases">
+	https://github.com/clementgallet/libTAS/releases</a></i><br>
+	<br>
+	Coloque o <i>libtas_1.4.4_amd64.deb</i> dentro da pasta &lt;USER&gt; e 
+	digite: <code><span style="background-color: #EAECEE">sudo apt install ./libtas_1.4.4_amd64.deb</span></code><br>
+	<br>
+	Caso voce encontre 
+	QUALQUER erro digite: <span style="background-color: #EAECEE"> <code>sudo apt --fix-broken install</code><br>
+	</span>
+	<br>
+	Agora vamos instalar o VcXsrv, que nos permitirá executar aplicativos com 
+	uma interface de usuário.<br>
+	<br>
+	Download: <a target="_blank" href="https://sourceforge.net/projects/vcxsrv/">
+	https://sourceforge.net/projects/vcxsrv/</a><br>
+	<br>
+	Configurações:<br>
+	<br>
+	<img border="0" src="arquivos/libtas/libtas_011.png" width="499" height="392"><br>
+	<img border="0" src="arquivos/libtas/libtas_012.png" width="499" height="392"><br>
+	<img border="0" src="arquivos/libtas/libtas_013.png" width="499" height="392"><br>
+	<br>
+	Na ultima tela, salve as configurações.
+	Para iniciar o Software novamente com tudo pronto, ultilize o <i>config.xlaunch</i> salvo.<br>
+	<br>
+	<img border="0" src="arquivos/libtas/libtas_014.png" width="800" height="75"><br>
+	<br>
+	Tudo pronto, vamos conectar o WSL ao servidor. No Linux digite:
+	<br>
+	<br>
+	<code><span style="background-color: #EAECEE">export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolv.conf 2&gt;/dev/null):0</span></code><br>
+	<br>
+	É preciso conectar o WSL ao VcXsrv toda a vez que iniciar o Linux.<br>
+	Em seguida:<br>
+	<br>
+	<span style="background-color: #EAECEE">
+	<code>libTAS<br>
+	</code></span><font color="#FF0000"><b>Case Sensitive</b></font><br>
+	<br>
+	<img border="0" src="arquivos/libtas/libtas_015.png"><br>
+	<b><font color="#FF0000">
+	<br>
+	</font>Não consegue ver o libTAS?</b><br>
+	O FireWall do Windows está bloqueando ele.<br>
+	<b>
+	<br>
+	<img border="0" src="arquivos/libtas/libtas_016.png"><br>
+	<br>
+	<i>XDG_RUNTIME_DIR is invalid or not set in the environment</i></b>?<b><br>
+	<br>
+	<font color="#FF0000">
+	<a href="arquivos/libtas/libtas_028.png" target="_blank">
+	<img border="0" src="arquivos/libtas/libtas_028.png" width="800" height="410"></a></font><br>
+	</b><br>
+	No Prompt de Comando do Windows:<span style="font-size: 11pt">
+	</span><code><span style="background-color: #EAECEE">wsl.exe --status</span></code><span style="font-size: 11pt"> 
+	em seguida </span><span style="background-color: #EAECEE"><code>wsl.exe 
+	--update</code></span><span style="font-size: 11pt">.</span><br>
+	<br>
+	<font color="#FF0000">
+	<a href="arquivos/libtas/libtas_029.png" target="_blank">
+	<img border="0" src="arquivos/libtas/libtas_029.png" width="800" height="418"></a><br>
+	<br>
+	</font>
+	<b><span style="font-size: 20pt">MAME</span></b><br>
+	<br>
+	Download Linux Compilado 0.272, <b><i>30</i></b><i><b>/11/2024</b></i>:
+	<a target="_blank" href="https://github.com/spluto-dot/mame/actions/runs/12101303287">
+	https://github.com/spluto-dot/mame/actions/runs/12101303287</a><code><span style="background-color: #EAECEE"><br>
+	</span></code>
+	<br>
+	<a target="_blank" href="https://github.com/mamedev/mame">
+	https://github.com/mamedev/mame</a><font color="#000080"><i><b><br>
+	</b></i></font><br>
+	<i>Command-Line Interface</i> do MAME que tambem serão usados no libTAS:<br>
+	<span style="background-color: #EAECEE"> <br>
+	</span><i>-window: Windows Mode<br>
+	-nokeepaspect: 4:3<br>
+	-skip_gameinfo: Pula o display das informações sobre o jogo Driver, CPU...<br>
+	-nomaximize: Nao &quot;maximiza&quot; na vertical<br>
+	-nonveram_save: Nao salva nenhuma alteração da BIOS/Service<br>
+	-resolution0 1280x1024: Resolução personalizada</i><br>
+	<br>
+	Antes de abrir o MAME no libTAS é preciso configurar tudo dentro do jogo 
+	antes, como o controle por exemplo, vamos 
+	usar como exemplo Street Fighter II, <i><b>sf2.zip</b></i>.<br>
+	<br>
+	<code><span style="background-color: #E5E7E9">./mame sf2.zip -window -nomaximize</span></code><br>
+	<br>
+	<img border="0" src="arquivos/libtas/libtas_019.png"><br>
+	<br>
+	WSL <font color="#FF0000"><b>NÃO</b></font> tem suporte para som, vai ter 
+	som quando libTAS gerar o .mkv.<br>
+	<br>
+	libTAS,<br>
+	<br>
+	<b>Game Executable:</b> <code><span style="background-color: #EAECEE">&lt;CAMINHO&gt;</span><span style="background-color: #E5E7E9">/mame</span></code><br>
+	<br>
+	<b>Command-line options:</b>
+	<span style="background-color: #EAECEE"> <code>
+	sf2.zip -window -nokeepaspect -skip_gameinfo -nomaximize -nonvram_save</code></span><br>
+	<br>
+	No MAME é importante definir os frames para garantir sync, dentro do MAME, 
+	System Information:<br>
+	<br>
+	<img border="0" src="arquivos/libtas/libtas_030.png"><br>
+	<br>
+	<a target="_blank" href="https://tasvideos.org/EmulatorResources/MAME#Framerate">
+	https://tasvideos.org/EmulatorResources/MAME#Framerate</a><br>
+	<br>
+	Time Crisis II roda a 59.90406, entao o que voce vai fazer no libTAS é vai 
+	adicionar esse <a href="arquivos/libtas/mame-framerate.lua">Script</a>* no
+	<i><b>Command-line options:</b></i> <code>
+	<span style="background-color: #EAECEE">-script &lt;CAMINHO&gt;/mame-framerate.lua</span></code>, 
+	feche o Emulador e ele vai lhe apresentar os valores:<br>
+	<br>
+	* -
+	<a target="_blank" href="https://tasvideos.org/UserFiles/Info/638183669502074999">
+	https://tasvideos.org/UserFiles/Info/638183669502074999</a><br>
+	<br>
+	<img border="0" src="arquivos/libtas/libtas_033.png"><br>
+	<br>
+	<b></b><span style="font-size: 11pt">Em seguida no <i><b>Frames per second:</b></i> 
+	do libTAS:<br>
+	<br>
+	<a href="arquivos/libtas/libtas_034.png" target="_blank">
+	<img border="0" src="arquivos/libtas/libtas_034.png" width="500" height="109"></a><br>
+	<br>
+	Numerator/Denominator<br>
+	<br>
+	</span>
+	<img border="0" src="arquivos/libtas/libtas_035.png"><span style="font-size: 11pt"><br>
+	<br>
+	</span><b><span style="font-size: 20pt">HBMAME</span></b><code><span style="background-color: #EAECEE"><br>
+	<br>
+	</span></code>
+	<span style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-size: 11pt;">
+	Dependências:&nbsp;</span><code style="color: rgb(0, 0, 0); font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;"><span style="background-color: rgb(234, 236, 238);">sudo 
+	apt-get install git build-essential python3 libsdl2-dev libsdl2-ttf-dev 
+	libfontconfig-dev libpulse-dev qtbase5-dev qtbase5-dev-tools qtchooser 
+	qt5-qmake</span></code><code><span style="background-color: #EAECEE"><br>
+	</span></code>
+	<i style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+	<br>
+	Download:&nbsp;</i><a target="_blank" style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255);" href="https://github.com/Robbbert/hbmame">https://github.com/Robbbert/hbmame</a><span style="font-size: 11pt"><br>
+	<br>
+	</span>
+	<img border="0" src="arquivos/libtas/libtas_031.png"><br>
+	<br>
+	Na pasta raiz, <i>hbmame-master</i>: <code>
+	<span style="background-color: #EAECEE">make TARGET=hbmame PTR64=1</span></code><b><font color="#FF0000"><br>
+	<br>
+	</font><span style="font-size: 20pt">Supermodel</span></b><br>
+	<br>
+	Download Linux Compilado 0.3a-git-4e7356a, <i><b>08/11/2024</b></i>:
+	<a target="_blank" href="https://github.com/spluto-dot/Supermodel/actions/runs/11751914567">
+	https://github.com/spluto-dot/Supermodel/actions/runs/11751914567</a><code><span style="background-color: #EAECEE"><br>
+	</span></code><i>
+	<br>
+	</i><a target="_blank" href="https://github.com/trzy/Supermodel">
+	https://github.com/trzy/Supermodel</a><br>
+	<br>
+	<b>Obs:</b> Não Funciona no WSL2<b><font color="#FF0000"><br>
+	<br>
+	</font><span style="font-size: 20pt">Flycast Dojo</span></b><code><span style="background-color: #EAECEE"><br>
+	</span></code>
+	<i style="color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;">
+	<br>
+	Download:&nbsp;</i><a target="_blank" style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255);" href="https://github.com/blueminder/flycast-dojo">https://github.com/blueminder/flycast-dojo</a><span style="font-size: 11pt"><br>
+	<br>
+	<i><b>flycast-dojo-x86_64.AppImage<br>
+	</b></i>
+	<br>
+	Extrair o <i>flycast-dojo-x86_64.AppImage</i>:
+	</span><code><span style="background-color: #EAECEE">chmod +x 
+	./flycast-dojo-x86_64.AppImage</span></code><span style="font-size: 11pt"> 
+	para conceder as permissões e logo em seguinda:
+	</span><code><span style="background-color: #EAECEE">./flycast-dojo-x86_64.AppImage --appimage-extract</span></code><span style="font-size: 11pt">.<br>
+	<br>
+	</span><a href="arquivos/libtas/libtas_032.png" target="_blank">
+	<img border="0" src="arquivos/libtas/libtas_032.png" width="500" height="288"></a><br>
+	<span style="font-size: 11pt"><br>
+	<i><b>.config/flycast-dojo/emu.cfg</b></i><br>
+	<i>rend.FixedFrequency = 1</i><br>
+	<br>
+	</span>
+	<img border="0" src="arquivos/libtas/libtas_025.png"><span style="font-size: 11pt"><br>
+	<br>
+	Desabilite os Drivers da NVIDIA.<br>
+	<br>
+	</span>
+	<a href="arquivos/libtas/libtas_026.png" target="_blank">
+	<img border="0" src="arquivos/libtas/libtas_026.png" width="735" height="400"></a></p>
+	<hr color="#E5E7E9">
+		</td>
+		<td rowspan="2" width="40">
+	&nbsp;</td>
+	</tr>
+
+	<tr>
+	    <td width="820">
+	        <span id="ano"></span><br>
+	        &nbsp;</td>
+	</tr>
+	
+	<script src="../../java/atualiza-ano.js"></script>
+
+	</table>
+</center>
+</body>
+
+</html>

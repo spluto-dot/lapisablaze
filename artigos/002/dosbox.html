@@ -1,0 +1,132 @@
+<html>
+
+<head>
+<meta charset="windows-1252">
+
+<title>LapisAblaze</title>
+<link href="../../css/default.css" rel="stylesheet" type="text/css">
+</head>
+<body topMargin=0 marginwidth="10" marginheight="0" bgcolor="#EAECEE">
+<center>
+<table border="0" cellPadding="0" width="900" style="border-collapse: collapse" id="table1" bgcolor="#FFFFFF">
+	<tr>
+		<td colspan="3">
+	<img border="0" src="../../arquivos/topo_.jpg"></td>
+	</tr>
+	<tr>
+		<td colspan="3">
+	<p align="center"><b><font size="3"><br>
+	</font><font size="4"><a href="../../index.html">INICIO</a> - ARTIGOS -
+	<a href="../../down/main.html">DOWNLOADS</a> - 
+	<a href="../../sonic/main.html">SONIC THE HEDGEHOG</a> - 
+	<a href="../../xbox/main.html">XBOX</a></font></b><hr color="#E5E7E9" width="95%"></td>
+	</tr>
+	<tr>
+		<td rowspan="2" width="40">
+	&nbsp;</td>
+		<td width="820">
+	<b><br>
+	<font style="font-size: 20pt"><a href="../main.html">Artigos</a></font><font style="font-size: 11pt"> 
+	/ dosbox </font>
+	<font style="font-size: 20pt"> (DOSBox)</font></b><hr color="#E5E7E9">
+	<p>
+	<i>Last Update: 23/03/2025</i><br>
+	<br>
+	DOSBox v0.74-3, Microsoft Windows 95<i><br>
+	<br>
+	<b>DOSBox:</b> <a target="_blank" href="https://www.dosbox.com/">
+	https://www.dosbox.com/</a><br>
+	<b>Bochs</b></i>: <a target="_blank" href="https://bochs.sourceforge.io/">
+	https://bochs.sourceforge.io/</a><br>
+	<a href="arquivos/dosbox/622c.img">622c.img</a><br>
+	<br>
+	<i>Bochs-3.0\bximage.exe</i><br>
+	<br>
+	500MB é mais do que o suficiente para tudo no Windows 95 <b>E</b> nao vai 
+	problema no fdisk.<br>
+	<br>
+	<img border="0" src="arquivos/dosbox/001.png"><br>
+	<br>
+	Coloque o <i>win95.img</i> e o <i>622c.img</i> na mesma pasta do DOSBox.<br>
+	<br>
+	<i>C:\Users\&lt;USER&gt;\AppData\Local\DOSBox\dosbox-0.74-3.conf<b><br>
+	<br>
+	[dosbox]<br>
+	memsize=<font color="#0000FF">32</font> (32MB RAM)<br>
+	<br>
+	[cpu]<br>
+	core=<font color="#0000FF">dynamic</font> (Usa núcleo mais rápido possível)<br>
+	cputype=<font color="#0000FF">pentium_slow</font> (Intel Pentium)<br>
+	cycles=<font color="#0000FF">fixed 60000</font> (Aprox. 200 MHz)</b></i><br>
+	<br>
+	Dentro do DOSBOX, vamos formatar a imagem:<br>
+	<br>
+	<i>imgmount 2 win95.img -size 512,63,16,1015 -t hdd -fs none<br>
+	<br>
+	boot 622c.img<br>
+	<br>
+	fdisk</i><br>
+	<br>
+	<img border="0" src="arquivos/dosbox/002.png"><br>
+	<br>
+	<i>1, 1, Y, &lt;ENTER&gt;</i><br>
+	<br>
+	Abra o DOSBox novamente.<i><br>
+	<br>
+	imgmount c win95.img<br>
+	<br>
+	boot 622c.img<br>
+	<br>
+	format c:<br>
+	<br>
+	Y<br>
+	<br>
+	</i><img border="0" src="arquivos/dosbox/003.png"><br>
+	<br>
+	Feche o DOSBox.<br>
+	Agora o Windows, use o <i>UltraISO</i> e/ou <i>PowerISO</i> para abrir o 
+	win95.img e copiar o conteudo da imagem <i><b>Microsoft Windows 95C 
+	(4.03.1216) (OSR2.5) (1997-11-26) [English]</b></i>.<i><br>
+	<br>
+	imgmount c win95.img<br>
+	<br>
+	boot 622c.img<br>
+	<br>
+	c:<br>
+	<br>
+	cd WIN95<br>
+	<br>
+	setup /is<br>
+	<br>
+	<b>24995-OEM-0700707-37345<br>
+	<br>
+	</b></i><img border="0" src="arquivos/dosbox/004.png"><br>
+	<br>
+	Abra o DOSBox.<i><br>
+	<br>
+	imgmount c win95.img<br>
+	<br>
+	boot win95.img<br>
+	<br>
+	<img border="0" src="arquivos/dosbox/005.png"><b><br>
+	<br>
+	<font color="#FF0000">FAIL!</font></b></i></p>
+	<hr color="#E5E7E9">
+		</td>
+		<td rowspan="2" width="40">
+	&nbsp;</td>
+	</tr>
+
+	<tr>
+	    <td width="820">
+	        <span id="ano"></span><br>
+	        &nbsp;</td>
+	</tr>
+	
+	<script src="../../java/atualiza-ano.js"></script>
+
+	</table>
+</center>
+</body>
+
+</html>
