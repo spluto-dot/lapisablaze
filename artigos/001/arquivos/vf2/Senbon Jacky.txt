@@ -1,2 +1,0 @@
-JACKY:
-P -> (1 Frames) -> G -> (8 Frames) -> K -> (9 Frames) -> G -> (9 Frames) -> *Loop*
