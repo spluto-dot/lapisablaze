@@ -1,0 +1,11 @@
+Tech Throw Reversal Glitch Compilation
+
+/artigos/001/cvs2.html
+
+Sega Dreamcast, mas deve ter o mesmo efeito no Arcade/Sony PlayStation 2
+
+Basicamente o Tech Throw Reversal possui XXX frames do inicio até o final, sabe que deu certo se em ambos os lados aparecer o "REVERSAL", é preciso fazer o comando até o frame XXX ou XXX.
+
+Tech Throw Reversal -> (3 Frames) -> 
+
+A maioria dos Special Moves e/ou Super Combo não fazem nada, então esse .txt é só os highlights.

@@ -1,0 +1,171 @@
+<html>
+
+<head>
+<meta charset="UTF-8">
+
+<title>LapisAblaze</title>
+<link href="../../css/default.css" rel="stylesheet" type="text/css">
+</head>
+<body topMargin=0 marginwidth="10" marginheight="0" bgcolor="#EAECEE">
+<center>
+<table border="0" cellPadding="0" width="900" style="border-collapse: collapse" id="table1" bgcolor="#FFFFFF">
+	<tr>
+		<td colspan="3">
+	<img border="0" src="../../arquivos/topo_.jpg"></td>
+	</tr>
+	<tr>
+		<td colspan="3">
+	<p align="center"><b><font size="3"><br>
+	</font><font size="4"><a href="../../index.html">INICIO</a> - ARTIGOS -
+	<a href="../../down/main.html">DOWNLOADS</a> - 
+	<a href="../../sonic/main.html">SONIC THE HEDGEHOG</a> - 
+	<a href="../../xbox/main.html">XBOX</a></font></b><hr color="#E5E7E9" width="95%"></td>
+	</tr>
+	<tr>
+		<td rowspan="2" width="40">
+	&nbsp;</td>
+		<td width="820">
+	<b><br>
+	<font style="font-size: 20pt"><a href="../main.html">Artigos</a></font><font style="font-size: 11pt"> 
+	/ mame_pc </font>
+	<font style="font-size: 20pt"> (PC, MAME)</font></b><hr color="#E5E7E9">
+	<p>
+	<i>Last Update: 05/02/2025<br>
+	<br>
+	</i>PC/AT 486 with CS4031 chipset<br>
+	<br>
+	Alem da ROM em si <i><b>ct486</b></i>, a gente precisa de uma serie de 
+	Softwares e imagens de CD e HDD, aqui tem tudo o que voce precisa:
+	<a target="_blank" href="https://pleasuredome.github.io/pleasuredome/mame/index.html">
+	https://pleasuredome.github.io/pleasuredome/mame/index.html</a><br>
+	<br>
+	Coloque o <i><b>ibm5170</b></i> e o <i><b>ibm5170_hdd</b></i> dentro da 
+	pasta ROMs mesmo<br>
+	<br>
+	<a href="arquivos/mame_pc/001.png" target="_blank">
+	<img border="0" src="arquivos/mame_pc/001.png" width="517" height="400"></a><br>
+	<br>
+	MAME vai pedir para voce apertar F1 e entrar na BIOS para fazer as 
+	configurações iniciais do seu PC.<br>
+	No <b>STANDARD CMOS</b> use o <i>PgUp/PgDn</i> 
+	para habilitar o disquete.<br>
+	<br>
+	<img border="0" src="arquivos/mame_pc/002.png" width="720" height="400"><br>
+	<br>
+	Agora va até o <b>AUTO DETECT HARD DISK</b>, ele vai detectar a imagem do <i>
+	MS-DOS</i>, aperte Y para aceitar, e Esc para cancelar a proxima verificação. 
+	<b>WRITE TO CMOD AND EXIT</b><br>
+	<br>
+	<img border="0" src="arquivos/mame_pc/003.png" width="720" height="400"><br>
+	<br>
+	Aqui voce ja tem um DOS funcionando.<br>
+	<br>
+	<img border="0" src="arquivos/mame_pc/004.png" width="720" height="400"><br>
+	<br>
+	Aperte Ctrl+ScrLk para habilitar o menu do MAME va em <i><b>Slot Devices</b></i> 
+	e selecione <i><b>isa2 sblaster1_0</b></i>.<br>
+	<br>
+	<a href="arquivos/mame_pc/005.png" target="_blank">
+	<img border="0" src="arquivos/mame_pc/005.png" width="300" height="475"></a><br>
+	<br>
+	Reset System<br>
+	Agora o Mouse, <i><b>File Manager</b></i>,<i><b> Floppydisk1</b></i>,<i><b> 
+	[software list]</b></i>,<i><b> IBM PC/AT floppy disk images</b></i>,<b><i> 
+	Mitsuomi Mouse Driver (v6.0)</i></b>, instale o Driver normalmente, F3 para 
+	outro Reset.<br>
+	<br>
+	<img border="0" src="arquivos/mame_pc/006.png" width="720" height="400"><br>
+	<img border="0" src="arquivos/mame_pc/007.png" width="720" height="400"><br>
+	<br>
+	Vamos testar?<br>
+	<br>
+	<a href="arquivos/mame_pc/008.png" target="_blank">
+	<img border="0" src="arquivos/mame_pc/008.png" width="517" height="400"></a><br>
+	<img border="0" src="arquivos/mame_pc/009.png" width="640" height="400"><br>
+	<br>
+	Agora o CD-ROM, <i><b>Slot Devices</b></i> e selecione <b><i>
+	board3:ide:ide:1 cdrom</i></b>.<br>
+	<i><br>
+	</i><a href="arquivos/mame_pc/010.png" target="_blank">
+	<img border="0" src="arquivos/mame_pc/010.png" width="300" height="474"></a><br>
+	<i><br>
+	<b>File Manager</b></i>,<i><b> Floppydisk1</b></i>,<i><b> [software list]</b></i>,<i><b> 
+	IBM PC/AT floppy disk images</b></i>,<i><b> CD-ROM/DVD-ROM drive IDE/ATAPI 
+	interface V2.2</b></i>, <i><b>INSTALL</b></i>, reinicie, e agora voce tem 
+	acesso ao CD-ROM pelo DOS tambem.<br>
+	<br>
+	<i><b>Beneath a Steel Sky (Europe):</b></i><br>
+	<img border="0" src="arquivos/mame_pc/011.png" width="640" height="400"><br>
+	<br>
+	O seu &quot;HD&quot; está em <i><b>diff/msdos622.dif</b>.<br>
+	<br>
+	<b>Command-Line: </b>mame ct486 -hard1 msdos622 -isa2 sblaster1_0 
+	-board3:ide:ide:1 cdrom -ramsize 16M<br>
+	<br>
+	Windows 95<br>
+	<b>Command-Line: </b>mame ct486 -hard1 win95 -isa2 sblaster_16 
+	-board3:ide:ide:1 cdrom -isa1 svga_s3 -ramsize 32M<br>
+	<br>
+	</i><img border="0" src="arquivos/mame_pc/012.png" width="640" height="480"><br>
+	<br>
+	Vamos instalar os Drivers da <b><i>Sound Blaster 16</i></b> primeiro:<br>
+	<br>
+	<img border="0" src="arquivos/mame_pc/013.png" width="286" height="239"><i><br>
+	</i><img border="0" src="arquivos/mame_pc/014.png" width="415" height="340"><i><br>
+	<br>
+	Next &gt;, Next &gt;, Next &gt;</i><br>
+	<br>
+	<img border="0" src="arquivos/mame_pc/015.png" width="441" height="323"><br>
+	<br>
+	Finish<br>
+	<br>
+	<i><b>File Manager</b></i>, <i><b>cdrom (cdrm)</b></i>, <i><b>[software 
+	list]</b></i>, <i><b>IBM PC/AT CD-ROM images</b></i>, <i><b>Windows 95 (en 
+	4.00.950.osr1)</b></i><br>
+	<br>
+	<img border="0" src="arquivos/mame_pc/016.png" width="318" height="186"><br>
+	<br>
+	OK! Agora a <i><b>Graphics Card</b></i>, <br>
+	<br>
+	<img border="0" src="arquivos/mame_pc/017.png" width="415" height="340"><br>
+	<br>
+	<i>Settings, Chage Display Type...</i><br>
+	<br>
+	<img border="0" src="arquivos/mame_pc/018.png" width="383" height="279"><br>
+	<img border="0" src="arquivos/mame_pc/019.png" width="441" height="322"><br>
+	<img border="0" src="arquivos/mame_pc/020.png" width="404" height="448"><br>
+	<br>
+	Restart! Enjoy!<br>
+	<br>
+	<i><b>diff/</b></i><i><b>win95.dif</b></i><br>
+	<br>
+	<img border="0" src="arquivos/mame_pc/023.png" width="640" height="480"><br>
+	<br>
+	OverClock<br>
+	Caso precise de mais processamento no seu 486/25Mhz:<br>
+	<br>
+	<a href="arquivos/mame_pc/021.png" target="_blank">
+	<img border="0" src="arquivos/mame_pc/021.png" width="300" height="521"></a><br>
+	<a href="arquivos/mame_pc/022.png" target="_blank">
+	<img border="0" src="arquivos/mame_pc/022.png" width="700" height="57"></a><br>
+	<br>
+	400% -&gt; 100Mhz</p>
+	<hr color="#E5E7E9">
+		</td>
+		<td rowspan="2" width="40">
+	&nbsp;</td>
+	</tr>
+
+	<tr>
+	    <td width="820">
+	        <span id="ano"></span><br>
+	        &nbsp;</td>
+	</tr>
+	
+	<script src="../../java/atualiza-ano.js"></script>
+
+	</table>
+</center>
+</body>
+
+</html>
