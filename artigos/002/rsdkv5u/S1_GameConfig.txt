@@ -1,0 +1,104 @@
+Data/
+├── Music/
+│   ├── ActComplete.ogg
+│   ├── Boss.ogg
+│   ├── Continue.ogg
+│   ├── Credits.ogg
+│   ├── Drowning.ogg
+│   ├── Ending.ogg
+│   ├── Final.ogg
+│   ├── GameOver.ogg
+│   ├── GreenHill.ogg
+│   ├── GreenHill_F.ogg
+│   ├── Invincibility.ogg
+│   ├── Invincibility_F.ogg
+│   ├── Labyrinth.ogg
+│   ├── Labyrinth_F.ogg
+│   ├── Marble.ogg
+│   ├── Marble_F.ogg
+│   ├── ScrapBrain.ogg
+│   ├── ScrapBrain_F.ogg
+│   ├── Specialstage.ogg
+│   ├── SpringYard.ogg
+│   ├── SpringYard_F.ogg
+│   ├── Starlight.ogg
+│   ├── Starlight_F.ogg
+│   └── Titlescreen.ogg
+│
+└── SoundFX/
+    ├── Global/
+    │   ├── 1Up.wav
+    │   ├── BackButton.wav
+    │   ├── BlueShield.wav
+    │   ├── BonusPoints.wav
+    │   ├── BubbleBounce.wav
+    │   ├── BubbleShield.wav
+    │   ├── Catch.wav
+    │   ├── Charge.wav
+    │   ├── Destroy.wav
+    │   ├── DropDash.wav
+    │   ├── Event.wav
+    │   ├── Explosion.wav
+    │   ├── FireDash.wav
+    │   ├── FireShield.wav
+    │   ├── Flying.wav
+    │   ├── HammerDash.wav
+    │   ├── HammerHit.wav
+    │   ├── HammerJump.wav
+    │   ├── Hurt.wav
+    │   ├── InstaShield.wav
+    │   ├── Jump.wav
+    │   ├── LampPost.wav
+    │   ├── Landing.wav
+    │   ├── LightningJump.wav
+    │   ├── LightningShield.wav
+    │   ├── LoseRings.wav
+    │   ├── MenuButton.wav
+    │   ├── Release.wav
+    │   ├── Resume.wav
+    │   ├── Ring.wav
+    │   ├── Rolling.wav
+    │   ├── ScoreAdd.wav
+    │   ├── ScoreTotal.wav
+    │   ├── Select.wav
+    │   ├── SignPost.wav
+    │   ├── Skidding.wav
+    │   ├── Sliding.wav
+    │   ├── SpecialRing.wav
+    │   ├── SpecialWarp.wav
+    │   ├── Spike.wav
+    │   ├── SpikesMove.wav
+    │   ├── Spring.wav
+    │   ├── Tired.wav
+    │   └── Transform.wav
+    │
+    └── Stage/
+        ├── BatbrainFly.wav
+        ├── BlockBreak.wav
+        ├── BossHit.wav
+        ├── Breathing.wav
+        ├── Bumper.wav
+        ├── ButtonPress.wav
+        ├── Buzzsaw.wav
+        ├── ChainPull.wav
+        ├── Continue.wav
+        ├── Crusher.wav
+        ├── DrownAlert.wav
+        ├── Drowning.wav
+        ├── ElectricArc.wav
+        ├── Emerald.wav
+        ├── Exit_SS.wav
+        ├── FireBurn.wav
+        ├── FlameThrower.wav
+        ├── FlappingDoor.wav
+        ├── GemBlockSS.wav
+        ├── LargeWall.wav
+        ├── LedgeBreak.wav
+        ├── LedgeBreak2.wav
+        ├── PushBlock.wav
+        ├── RotateSS.wav
+        ├── Sega.wav
+        ├── SmallFireball.wav
+        ├── Waterfall.wav
+        ├── Waterfall2.wav
+        └── WaterSplash.wav
