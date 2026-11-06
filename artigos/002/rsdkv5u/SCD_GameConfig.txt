@@ -1,0 +1,160 @@
+Data/
+├── Music/
+│   ├── JP/
+│   │   ├── Boss.ogg
+│   │   ├── DAGarden.ogg
+│   │   ├── FinalBoss.ogg
+│   │   ├── GameOver.ogg
+│   │   ├── Invincibility.ogg
+│   │   ├── R1A.ogg
+│   │   ├── R1C.ogg
+│   │   ├── R1D.ogg
+│   │   ├── R3A.ogg
+│   │   ├── R3C.ogg
+│   │   ├── R3D.ogg
+│   │   ├── R4A.ogg
+│   │   ├── R4C.ogg
+│   │   ├── R4D.ogg
+│   │   ├── R5A.ogg
+│   │   ├── R5C.ogg
+│   │   ├── R5D.ogg
+│   │   ├── R6A.ogg
+│   │   ├── R6C.ogg
+│   │   ├── R6D.ogg
+│   │   ├── R7A.ogg
+│   │   ├── R7C.ogg
+│   │   ├── R7D.ogg
+│   │   ├── R8A.ogg
+│   │   ├── R8C.ogg
+│   │   ├── R8D.ogg
+│   │   ├── SpecialStage.ogg
+│   │   ├── SpeedShoes.ogg
+│   │   ├── TimeAttack.ogg
+│   │   ├── TitleScreen.ogg
+│   │   └── ZoneComplete.ogg
+│   │
+│   ├── R1B.ogg
+│   ├── R3B.ogg
+│   ├── R4B.ogg
+│   ├── R5B.ogg
+│   ├── R6B.ogg
+│   ├── R7B.ogg
+│   ├── R8B.ogg
+│   │
+│   └── US/
+│       ├── Boss.ogg
+│       ├── DAGarden.ogg
+│       ├── FinalBoss.ogg
+│       ├── GameOver.ogg
+│       ├── Invincibility.ogg
+│       ├── R1A.ogg
+│       ├── R1C.ogg
+│       ├── R1D.ogg
+│       ├── R3A.ogg
+│       ├── R3C.ogg
+│       ├── R3D.ogg
+│       ├── R4A.ogg
+│       ├── R4C.ogg
+│       ├── R4D.ogg
+│       ├── R5A.ogg
+│       ├── R5C.ogg
+│       ├── R5D.ogg
+│       ├── R6A.ogg
+│       ├── R6C.ogg
+│       ├── R6D.ogg
+│       ├── R7A.ogg
+│       ├── R7C.ogg
+│       ├── R7D.ogg
+│       ├── R8A.ogg
+│       ├── R8C.ogg
+│       ├── R8D.ogg
+│       ├── SpecialStage.ogg
+│       ├── SpeedShoes.ogg
+│       ├── TitleScreen.ogg
+│       └── ZoneComplete.ogg
+│
+└── SoundFX/
+    ├── Global/
+    │   ├── 1Up.wav
+    │   ├── Achievement.wav
+    │   ├── BlueShield.wav
+    │   ├── Charge.wav
+    │   ├── Destroy.wav
+    │   ├── DropDash.wav
+    │   ├── Explosion.wav
+    │   ├── Flying.wav
+    │   ├── Future.wav
+    │   ├── GlideDropLand.wav
+    │   ├── Grab.wav
+    │   ├── HammerDash.wav
+    │   ├── HammerHit.wav
+    │   ├── HammerJump.wav
+    │   ├── Hurt.wav
+    │   ├── Jump.wav
+    │   ├── LampPost.wav
+    │   ├── LoseRings.wav
+    │   ├── MenuButton.wav
+    │   ├── OuttaHere.wav
+    │   ├── Past.wav
+    │   ├── Release.wav
+    │   ├── Ring.wav
+    │   ├── ScoreAdd.wav
+    │   ├── ScoreTotal.wav
+    │   ├── Select.wav
+    │   ├── SignPost.wav
+    │   ├── Skidding.wav
+    │   ├── Slide.wav
+    │   ├── SpecialRing.wav
+    │   ├── SpecialWarp.wav
+    │   ├── Spring.wav
+    │   ├── TimeWarp.wav
+    │   └── Tired.wav
+    │
+    └── Stage/
+        ├── AirAlert.wav
+        ├── AmyCaptured.wav
+        ├── BackButton.wav
+        ├── Blades.wav
+        ├── Bomb.wav
+        ├── BombCarrier.wav
+        ├── BossHit.wav
+        ├── BounceFloor.wav
+        ├── Breathing.wav
+        ├── Bumper.wav
+        ├── Bumper2.wav
+        ├── Buzzsaw.wav
+        ├── Catch.wav
+        ├── ChuteExit.wav
+        ├── Crumble.wav
+        ├── Door.wav
+        ├── DoorClose.wav
+        ├── DrownAlert.wav
+        ├── Drowning.wav
+        ├── Electricity.wav
+        ├── Event.wav
+        ├── Fan.wav
+        ├── Flipper.wav
+        ├── Giggle.wav
+        ├── GlassSmash.wav
+        ├── GrittyGround.wav
+        ├── HLaser.wav
+        ├── Impact1.wav
+        ├── Jab.wav
+        ├── LargeBooster.wav
+        ├── Launcher.wav
+        ├── MechStep.wav
+        ├── MiniBumper.wav
+        ├── MSCharge.wav
+        ├── MSElectric.wav
+        ├── MSJet.wav
+        ├── ScoreChute.wav
+        ├── Sega.wav
+        ├── Shot.wav
+        ├── Shot2.wav
+        ├── ShrinkLaser.wav
+        ├── SmallBooster.wav
+        ├── Spikes.wav
+        ├── Switch.wav
+        ├── TimeUFO.wav
+        ├── WaterSplash.wav
+        └── WingRotate.wav

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RSDKv5U - Chimera Tutorial</title>
+</head>
+<body>
+    <h1>RSDKv5U - Chimera Tutorial</h1>
+
+    <p><strong>Core:</strong> <a href="https://github.com/ToolAssisted-run/chimera-core-rsdkv5u">RSDKv5U Chimera Core</a></p>
+
+    <h2>1. Getting Started</h2>
+
+    <p>If you launch <code>RSDKv5U.exe</code> with the original <code>Sonic1u.rsdk</code> DataPack, the game will run without sound.</p>
+
+    <p>This happens because audio in Sonic Origins is handled by the Hedgehog Engine 2, rather than directly by RSDKv5U.</p>
+
+    <p>Reference: <a href="https://github.com/RSDKModding/RSDKv5-Decompilation/blob/master/FAQ.md">RSDKv5 Decompilation FAQ</a></p>
+
+    <p>To get the game working properly, we need to run the decompilation in <strong>Using Data Folder</strong> mode. This requires unpacking the original <code>.rsdk</code> DataPacks using a tool called RetroED.</p>
+
+    <p>RetroED: <a href="https://github.com/RSDKModding/RetroED">https://github.com/RSDKModding/RetroED</a></p>
+
+    <h2>2. Extracting the Sonic Origins DataPacks</h2>
+
+    <p>Navigate to your Sonic Origins installation directory:</p>
+
+    <p><code>\image\x64\raw\retro\</code></p>
+
+    <p>You should find the following files:</p>
+    <ul>
+        <li><code>Sonic1u.rsdk</code></li>
+        <li><code>Sonic2u.rsdk</code></li>
+        <li><code>SonicCDu.rsdk</code></li>
+    </ul>
+
+    <p>For this example, we will use Sonic 1.</p>
+
+    <ol>
+        <li>Open RetroED and navigate to <strong>Tools &gt; RSDK Unpacker</strong>.</li>
+        <li>Under <strong>Select DataPack</strong>, select <code>Sonic1u.rsdk</code>.</li>
+        <li>Load the corresponding <code>RSDKv5UFileList.txt</code>.</li>
+        <li>Select <strong>Export DataPack</strong>.</li>
+    </ol>
+
+    <p>This will extract the game's Bytecode and Data files.</p>
+
+    <p>Once extracted, place <code>RSDKv5U.exe</code> in the same directory as the two extracted folders.</p>
+
+    <p>At this point, launching the executable should run the game correctly, but there will still be no sound.</p>
+
+    <h2>3. Restoring Music and Sound Effects</h2>
+
+    <p>Since Sonic Origins uses the Hedgehog Engine 2 for audio management, we need to retrieve the original audio files from an earlier version of the game.</p>
+
+    <p>For this example, we will use <strong>Sonic the Hedgehog (2013)</strong>.</p>
+
+    <p>Open RetroED again and repeat the extraction process, this time using:</p>
+    <ul>
+        <li><code>Data.rsdk</code></li>
+        <li><code>RSDKv4FileList.txt</code></li>
+    </ul>
+
+    <p>After extraction, navigate to the <code>Data</code> directory. You should find two important folders:</p>
+    <ul>
+        <li><code>Music</code></li>
+        <li><code>SoundFX</code></li>
+    </ul>
+
+    <p>Copy both folders into the <code>Data</code> directory extracted from Sonic Origins.</p>
+
+    <p>The music and original sound effects should now be available. However, Sonic Origins Plus introduced additional sound effects that are not present in the original 2013 release. We need to retrieve those separately.</p>
+
+    <h2>4. Extracting the Additional Sound Effects (Origins Plus)</h2>
+
+    <p>The easiest method I found for extracting the additional sound effects is described in the following tutorial:</p>
+
+    <p><a href="https://gamebanana.com/tuts/16829">GameBanana - Sound Effects Extraction Tutorial</a></p>
+
+    <p>By following this procedure, you should be able to obtain the <code>Data/SoundFX/</code> directory directly from Sonic Origins Plus.</p>
+
+    <p>The following files contain the sound effect references extracted from <code>Data/Game/GameConfig.bin</code> in Sonic Origins Plus:</p>
+    <ul>
+        <li><code><a target="_blank" href="S1_GameConfig.txt">S1_GameConfig.txt</a></code></li>
+        <li><code><a target="_blank" href="S2_GameConfig.txt">S2_GameConfig.txt</a></code></li>
+        <li><code><a target="_blank" href="SCD_GameConfig.txt">SCD_GameConfig.txt</a></code></li>
+    </ul>
+
+    <p>You will need to manually compare the SoundFX entries and identify which sound effects are missing from the original Sonic 2013 files.</p>
+
+    <p>Copy the additional sound effects into the corresponding <code>Data/SoundFX/</code> directory.</p>
+
+    <h2>5. Final Setup</h2>
+
+    <p>That's it! RSDKv5U should now be able to run the game with its music and sound effects restored.</p>
+
+    <p>To use it with the Chimera core, simply ZIP the complete extracted game directory and load it through Chimera.</p>
+
+    <h2>Known Issues and Limitations</h2>
+
+    <h3>Sonic the Hedgehog 3</h3>
+    <ul>
+        <li>Currently does not work.</li>
+    </ul>
+
+    <h3>Sonic CD</h3>
+    <ul>
+        <li>The Rolling sound effect is missing.</li>
+        <li>A mod is required to fix this issue, even when using the 2011 version.</li>
+    </ul>
+
+    <h3>Sonic 1</h3>
+    <ul>
+        <li>Drop Dash and Spin Dash are unavailable.</li>
+        <li>The game currently uses Classic Mode settings.</li>
+    </ul>
+
+    <h2>Testing</h2>
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/YZgbZYNOQe8"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
+</body>
+</html>

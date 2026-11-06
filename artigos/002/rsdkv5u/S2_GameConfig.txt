@@ -1,0 +1,164 @@
+Data/
+├── Music/
+│   ├── ActComplete.ogg
+│   ├── AquaticRuin.ogg
+│   ├── AquaticRuin_F.ogg
+│   ├── Boss.ogg
+│   ├── CasinoNight.ogg
+│   ├── CasinoNight_F.ogg
+│   ├── CasinoNight2.ogg
+│   ├── CasinoNight2_F.ogg
+│   ├── ChemicalPlant.ogg
+│   ├── ChemicalPlant_F.ogg
+│   ├── Continue.ogg
+│   ├── Credits.ogg
+│   ├── DeathEgg.ogg
+│   ├── EmeraldHill.ogg
+│   ├── EmeraldHill_F.ogg
+│   ├── EmeraldHill2.ogg
+│   ├── EmeraldHill2_F.ogg
+│   ├── Ending.ogg
+│   ├── Extra.ogg
+│   ├── FinalBoss.ogg
+│   ├── GameOver.ogg
+│   ├── HillTop.ogg
+│   ├── HillTop_F.ogg
+│   ├── Invincibility.ogg
+│   ├── Invincibility_F.ogg
+│   ├── Metropolis.ogg
+│   ├── Metropolis_F.ogg
+│   ├── MysticCave.ogg
+│   ├── MysticCave_F.ogg
+│   ├── MysticCave2.ogg
+│   ├── MysticCave2_F.ogg
+│   ├── OilOcean.ogg
+│   ├── OilOcean_F.ogg
+│   ├── Options.ogg
+│   ├── Results.ogg
+│   ├── SkyChase.ogg
+│   ├── SpecialStage.ogg
+│   ├── Super.ogg
+│   ├── TitleScreen.ogg
+│   ├── WingFortress.ogg
+│   └── WingFortress_F.ogg
+│
+└── SoundFX/
+    ├── Global/
+    │   ├── 1Up.wav
+    │   ├── BackButton.wav
+    │   ├── BlueShield.wav
+    │   ├── BonusPoints.wav
+    │   ├── BubbleBounce.wav
+    │   ├── BubbleShield.wav
+    │   ├── Catch.wav
+    │   ├── Charge.wav
+    │   ├── Continue.wav
+    │   ├── Destroy.wav
+    │   ├── DropDash.wav
+    │   ├── Event.wav
+    │   ├── Explosion.wav
+    │   ├── FireDash.wav
+    │   ├── FireShield.wav
+    │   ├── Flying.wav
+    │   ├── HammerDash.wav
+    │   ├── HammerHit.wav
+    │   ├── HammerJump.wav
+    │   ├── Hurt.wav
+    │   ├── InstaShield.wav
+    │   ├── Jump.wav
+    │   ├── Landing.wav
+    │   ├── LightningJump.wav
+    │   ├── LightningShield.wav
+    │   ├── LoseRings.wav
+    │   ├── MenuButton.wav
+    │   ├── Release.wav
+    │   ├── Resume.wav
+    │   ├── Ring.wav
+    │   ├── Rolling.wav
+    │   ├── ScoreAdd.wav
+    │   ├── ScoreTotal.wav
+    │   ├── Select.wav
+    │   ├── SignPost.wav
+    │   ├── SignPost2p.wav
+    │   ├── Skidding.wav
+    │   ├── Sliding.wav
+    │   ├── SpecialRing.wav
+    │   ├── SpecialWarp.wav
+    │   ├── Spike.wav
+    │   ├── SpikesMove.wav
+    │   ├── Spring.wav
+    │   ├── StarPost.wav
+    │   ├── Teleport.wav
+    │   ├── Tired.wav
+    │   └── Transform.wav
+    │
+    └── Stage/
+        ├── ArrowHit.wav
+        ├── Beep.wav
+        ├── BlockBreak.wav
+        ├── BossHit.wav
+        ├── BossSpark.wav
+        ├── Breathing.wav
+        ├── Bumper.wav
+        ├── ButtonPress.wav
+        ├── Buzzsaw.wav
+        ├── ChemJump.wav
+        ├── ChemSplash.wav
+        ├── Clank.wav
+        ├── CNZBumper.wav
+        ├── Crusher.wav
+        ├── DropBridge.wav
+        ├── DropBridge2.wav
+        ├── DrownAlert.wav
+        ├── Drowning.wav
+        ├── Electricity.wav
+        ├── Elevator.wav
+        ├── Emerald.wav
+        ├── Exit_SS.wav
+        ├── Explosion2.wav
+        ├── Explosion3.wav
+        ├── Fail.wav
+        ├── FlameThrower.wav
+        ├── FlappingDoor.wav
+        ├── Flipper.wav
+        ├── GasPop.wav
+        ├── Helicopter.wav
+        ├── Horn1.wav
+        ├── Horn2.wav
+        ├── Horn3.wav
+        ├── Horn4.wav
+        ├── HornSweep.wav
+        ├── HullClose.wav
+        ├── Impact1.wav
+        ├── Impact2.wav
+        ├── LargeLaser.wav
+        ├── LargeWall.wav
+        ├── LaserCharge.wav
+        ├── LaserSkim.wav
+        ├── Launch.wav
+        ├── LedgeBreak.wav
+        ├── LiftTick.wav
+        ├── LoudHorn.wav
+        ├── MachineMove.wav
+        ├── MediumLaser.wav
+        ├── OctusShot.wav
+        ├── OilSlide.wav
+        ├── PlatCollide.wav
+        ├── Plunger.wav
+        ├── Rev.wav
+        ├── Rumble.wav
+        ├── Rustle.wav
+        ├── Saw.wav
+        ├── Sega.wav
+        ├── SlotMachine.wav
+        ├── SmallFireball.wav
+        ├── SmallLaser.wav
+        ├── Spear.wav
+        ├── Swish.wav
+        ├── TargetBumper.wav
+        ├── Thruster.wav
+        ├── Twinkle.wav
+        ├── Waterfall.wav
+        ├── Waterfall2.wav
+        ├── WaterGeyser.wav
+        └── WaterSplash.wav
